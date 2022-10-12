@@ -1,5 +1,5 @@
 import './App.css';
-
+import LifeCycle from './components/LifeCycle';
 // import Bind from './components/bindMethods';
 // import PassParam from './components/PassParam';
 // import ConditionalExpression from './components/ConditionalExpression';
@@ -11,7 +11,8 @@ function App() {
       {/* <Bind /> */}
       {/* <PassParam /> */}
       {/* <ConditionalExpression /> */}
-      <Refs />
+      <LifeCycle />
+      {/* <Refs /> */}
     </div>
   );
 }
