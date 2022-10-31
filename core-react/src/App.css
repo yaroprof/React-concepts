@@ -1,6 +1,11 @@
 .App {
-  text-align: center;
-  background-color: cornflowerblue;
+  display: flex;
+  justify-content: center;
+  /* text-align: center; */
+  align-items: center;
+  min-height: 750px;
+  background-color: rgba(0,0,0,0.88);
+  font-size: 32px;
 }
 
 .App-logo {

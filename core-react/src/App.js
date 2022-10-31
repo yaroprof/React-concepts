@@ -1,5 +1,5 @@
 import './App.css';
-import LifeCycle from './components/LifeCycle';
+import LifeCycle from './components/LifeCycle-componentDidMount';
 // import Bind from './components/bindMethods';
 // import PassParam from './components/PassParam';
 // import ConditionalExpression from './components/ConditionalExpression';
