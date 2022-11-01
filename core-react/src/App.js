@@ -1,5 +1,6 @@
 import './App.css';
-import GetSnapShotBeforeUpdate from './components/getSnapShotBeforeUpdate/GetSnapShotBeforeUpdate';
+import ComponentDidUpdate from './components/componentDidUpdate/ComponentDidUpdate';
+// import GetSnapShotBeforeUpdate from './components/getSnapShotBeforeUpdate/GetSnapShotBeforeUpdate';
 // import WithShouldComponentUpdate from './components/shouldComponentUpdate/With-shouldComponentUpdate';
 // import WithoutShouldComponentUpdate from './components/shouldComponentUpdate/Without-shouldComponentUpdate';
 // import LifeCycle02 from './components/LifeCycle-componentDidMount_02';
@@ -12,7 +13,8 @@ import GetSnapShotBeforeUpdate from './components/getSnapShotBeforeUpdate/GetSna
 function App() {
   return (
     <div className="App">
-      <GetSnapShotBeforeUpdate />
+      <ComponentDidUpdate />
+      {/* <GetSnapShotBeforeUpdate /> */}
       {/* <WithShouldComponentUpdate /> */}
       {/* <WithoutShouldComponentUpdate /> */}
       {/* <LifeCycle02 /> */}
