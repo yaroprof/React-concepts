@@ -1,5 +1,7 @@
 import './App.css';
-import LifeCycle02 from './components/LifeCycle-componentDidMount_02';
+import WithShouldComponentUpdate from './components/shouldComponentUpdate/With-shouldComponentUpdate';
+// import WithoutShouldComponentUpdate from './components/shouldComponentUpdate/Without-shouldComponentUpdate';
+// import LifeCycle02 from './components/LifeCycle-componentDidMount_02';
 // import LifeCycle from './components/LifeCycle-componentDidMount_01';
 // import Bind from './components/bindMethods';
 // import PassParam from './components/PassParam';
@@ -9,7 +11,9 @@ import LifeCycle02 from './components/LifeCycle-componentDidMount_02';
 function App() {
   return (
     <div className="App">
-      <LifeCycle02 />
+      <WithShouldComponentUpdate />
+      {/* <WithoutShouldComponentUpdate /> */}
+      {/* <LifeCycle02 /> */}
       {/* <LifeCycle /> */}
       {/* <Bind /> */}
       {/* <PassParam /> */}
