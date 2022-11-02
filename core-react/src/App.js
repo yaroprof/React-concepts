@@ -1,5 +1,6 @@
 import './App.css';
-import ComponentDidUpdate from './components/componentDidUpdate/ComponentDidUpdate';
+// import ComponentWillUnmount from './components/componentWillUnmount/ComponentWillUnmount';
+// import ComponentDidUpdate from './components/componentDidUpdate/ComponentDidUpdate';
 // import GetSnapShotBeforeUpdate from './components/getSnapShotBeforeUpdate/GetSnapShotBeforeUpdate';
 // import WithShouldComponentUpdate from './components/shouldComponentUpdate/With-shouldComponentUpdate';
 // import WithoutShouldComponentUpdate from './components/shouldComponentUpdate/Without-shouldComponentUpdate';
@@ -13,7 +14,8 @@ import ComponentDidUpdate from './components/componentDidUpdate/ComponentDidUpda
 function App() {
   return (
     <div className="App">
-      <ComponentDidUpdate />
+      {/* <ComponentWillUnmount /> */}
+      {/* <ComponentDidUpdate /> */}
       {/* <GetSnapShotBeforeUpdate /> */}
       {/* <WithShouldComponentUpdate /> */}
       {/* <WithoutShouldComponentUpdate /> */}
