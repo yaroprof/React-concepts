@@ -1,5 +1,6 @@
 import './App.css';
-import HighOrderComponents from './components/Higher-Order_Components';
+import Context from './components-context/Context';
+// import HighOrderComponents from './components/Higher-Order_Components';
 // import ComponentWillUnmount from './components/componentWillUnmount/ComponentWillUnmount';
 // import ComponentDidUpdate from './components/componentDidUpdate/ComponentDidUpdate';
 // import GetSnapShotBeforeUpdate from './components/getSnapShotBeforeUpdate/GetSnapShotBeforeUpdate';
@@ -15,7 +16,8 @@ import HighOrderComponents from './components/Higher-Order_Components';
 function App() {
   return (
     <div className="App">
-      <HighOrderComponents />
+      <Context />
+      {/* <HighOrderComponents /> */}
       {/* <ComponentWillUnmount /> */}
       {/* <ComponentDidUpdate /> */}
       {/* <GetSnapShotBeforeUpdate /> */}
