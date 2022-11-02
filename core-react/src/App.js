@@ -1,4 +1,5 @@
 import './App.css';
+import HighOrderComponents from './components/Higher-Order_Components';
 // import ComponentWillUnmount from './components/componentWillUnmount/ComponentWillUnmount';
 // import ComponentDidUpdate from './components/componentDidUpdate/ComponentDidUpdate';
 // import GetSnapShotBeforeUpdate from './components/getSnapShotBeforeUpdate/GetSnapShotBeforeUpdate';
@@ -14,6 +15,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      <HighOrderComponents />
       {/* <ComponentWillUnmount /> */}
       {/* <ComponentDidUpdate /> */}
       {/* <GetSnapShotBeforeUpdate /> */}
