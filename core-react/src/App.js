@@ -1,5 +1,11 @@
 import './App.css';
-import Context from './components-context/Context';
+import UseEffectCounter from './hooks/UseEffectCounter';
+
+
+// import UseStateHookAsync from './hooks/UseStateHookAsync';
+// import UseStateHookChangeNum from './hooks/UseStateHookChangeNum';
+// import UseStateHookText from './hooks/UseStateHookText';
+// import UseStateHookNum from './hooks/UseStateHookNum';
 // import HighOrderComponents from './components/Higher-Order_Components';
 // import ComponentWillUnmount from './components/componentWillUnmount/ComponentWillUnmount';
 // import ComponentDidUpdate from './components/componentDidUpdate/ComponentDidUpdate';
@@ -16,7 +22,13 @@ import Context from './components-context/Context';
 function App() {
   return (
     <div className="App">
-      <Context />
+
+      <UseEffectCounter />
+      {/* <UseStateHookAsync /> */}
+      {/* <UseStateHookChangeNum /> */}
+      {/* <UseStateHookText /> */}
+      {/* <UseStateHookNum /> */}
+      {/* <Context /> */}
       {/* <HighOrderComponents /> */}
       {/* <ComponentWillUnmount /> */}
       {/* <ComponentDidUpdate /> */}
