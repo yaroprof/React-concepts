@@ -1,7 +1,14 @@
 import './App.css';
-import UseEffectCounter from './hooks/UseEffectCounter';
-
-
+import CounterEvents_01 from './components-v02/rendering/Event-handling/CounterEvents_01';
+// import CounterEvents from './components-v02/rendering/Event-handling/CounterEvents';
+// import InputEvents from './components-v02/rendering/Event-handling/InputEvents';
+// import LoggingButton from './components-v02/rendering/Event-handling/LoggingButton';
+// import TogleEvents from './components-v02/rendering/Event-handling/TogleEvents'
+// import HandlingEvents from './components-v02/rendering/Event-handling/HandlingEvents';
+/*
+// import EventHandlingSubmission from './components/event-handling/EventHandlingSubmission';
+// import EventHandling from './components/event-handling/EventHandling';
+// import UseEffectCounter from './hooks/UseEffectCounter';
 // import UseStateHookAsync from './hooks/UseStateHookAsync';
 // import UseStateHookChangeNum from './hooks/UseStateHookChangeNum';
 // import UseStateHookText from './hooks/UseStateHookText';
@@ -18,12 +25,21 @@ import UseEffectCounter from './hooks/UseEffectCounter';
 // import PassParam from './components/PassParam';
 // import ConditionalExpression from './components/ConditionalExpression';
 // import Refs from './components/Refs';
+*/
 
 function App() {
   return (
     <div className="App">
-
-      <UseEffectCounter />
+      
+      <CounterEvents_01 />
+      {/* <InputEvents /> */}
+      {/* <CounterEvents /> */}
+      {/* <LoggingButton /> */}
+      {/* <TogleEvents /> */}
+      {/* <HandlingEvents /> */}
+      {/* <EventHandlingSubmission /> */}
+      {/* <EventHandling /> */}
+      {/* <UseEffectCounter /> */}
       {/* <UseStateHookAsync /> */}
       {/* <UseStateHookChangeNum /> */}
       {/* <UseStateHookText /> */}
