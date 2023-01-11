@@ -29,17 +29,22 @@
 // import Refs from './components/Refs';
 */
 import './App.css';
-import UseCallBack01 from './components-v02/hooks/UseCallBack/UseCallBack01';
-import UseEffect01 from './components-v02/hooks/UseCallBack/UseCallBack01';
+import UseCallback from './components-v02/hooks/UseCallback';
+import UseContext from './components-v02/useContext/UseContext';
+
+// import UseCallBack01 from './components-v02/hooks/UseCallBack/UseCallBack01';
+// import UseEffect01 from './components-v02/hooks/UseCallBack/UseCallBack01';
+// import UseMemo from './components-v02/hooks/UseMemo';
 // import UseEffect01 from './components-v02/hooks/UseEffect01';
 // import UseEffect02 from './components-v02/hooks/UseEffect02';
 // import UseEffect03 from './components-v02/hooks/UseEffect03';
 
-
 function App() {
   return (
     <div className="App">
-      <UseCallBack01 />
+      <UseContext />
+      {/* <UseCallback /> */}
+      {/* <UseMemo /> */}
       {/* <UseEffect03 /> */}
       {/* <UseEffect02 /> */}
       {/* <UseEffect01 /> */}
