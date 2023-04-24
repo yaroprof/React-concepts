@@ -16,28 +16,37 @@ const Form = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const onSubmit = (data) => {
-    console.log(data);
-    setIsSubmitted(true);
+    schema
+      .validate(data, { abortEarly: false })
+      .then((values) => {
+        console.log(values);
+        values(values);
+        setSuccessMessage("Form successfully submitted!");
+      })
+      .catch((err) => {
+        errors(err.errors);
+      });
   };
-
+  
+  
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <label>
         First Name:
-        <input type="text" {...register("firstName")} />
+        <input type="text" {...register("firstName", { required: true })} />
+        {errors.firstName && <span>This field is required</span>} {/* add error message */}
       </label>
-      {errors.firstName && <p>{errors.firstName.message}</p>}
       <br />
       <label>
         Last Name:
-        <input type="text" {...register("lastName")} />
+        <input type="text" {...register("lastName", { required: true })} />
+        {errors.lastName && <span>This field is required</span>} {/* add error message */}
       </label>
-      {errors.lastName && <p>{errors.lastName.message}</p>}
       <br />
       <button type="submit">Submit</button>
-      {isSubmitted && <p>Form submitted successfully!</p>}
+      {isSubmitted && <span>Form submitted successfully!</span>} {/* add success message */}
     </form>
   );
-};
-
+  
+  }
 export default Form;
