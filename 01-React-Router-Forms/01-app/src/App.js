@@ -1,52 +1,49 @@
-import React, { useState } from "react";
+import React from "react";
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from "yup";
+import Form from './Form'
 
-const schema = yup.object().shape({
-  firstName: yup.string().required(),
-  lastName: yup.string().required(),
-});
-
-const Form = () => {
-  const { register, handleSubmit, errors } = useForm({
-    resolver: yupResolver(schema),
-  });
-  
-  const [isSubmitted, setIsSubmitted] = useState(false);
+function App() {
+  const { register, handleSubmit, formState: { errors } } = useForm();
 
   const onSubmit = (data) => {
-    schema
-      .validate(data, { abortEarly: false })
-      .then((values) => {
-        console.log(values);
-        values(values);
-        setSuccessMessage("Form successfully submitted!");
-      })
-      .catch((err) => {
-        errors(err.errors);
-      });
-  };
-  
-  
+    console.log(data);
+  };;
+
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <label>
-        First Name:
-        <input type="text" {...register("firstName", { required: true })} />
-        {errors.firstName && <span>This field is required</span>} {/* add error message */}
-      </label>
-      <br />
-      <label>
-        Last Name:
-        <input type="text" {...register("lastName", { required: true })} />
-        {errors.lastName && <span>This field is required</span>} {/* add error message */}
-      </label>
-      <br />
-      <button type="submit">Submit</button>
-      {isSubmitted && <span>Form submitted successfully!</span>} {/* add success message */}
-    </form>
+    <Router>
+    <nav>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/form">Form</Link>
+        </li>
+      </ul>
+    </nav>
+    <Routes>
+      <Route path="/" element={<h1>Welcome to my React application with React Router and Forms options</h1>} />
+      <Route path="/form" element={<Form register={register} handleSubmit={handleSubmit} onSubmit={onSubmit} errors={errors} />} />
+
+      {/* <Route path="/form" element={
+        <form onSubmit={handleSubmit(onSubmit)}>
+          <label>
+            First Name:
+            <input type="text" {...register("firstName")} />
+          </label>
+          <br />
+          <label>
+            Last Name:
+            <input type="text" {...register("lastName")} />
+          </label>
+          <br />
+          <button type="submit">Submit</button>
+        </form>
+      } /> */}
+    </Routes>
+  </Router>
   );
-  
-  }
-export default Form;
+}
+
+export default App;
